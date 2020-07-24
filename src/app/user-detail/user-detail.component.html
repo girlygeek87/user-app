@@ -1,0 +1,29 @@
+
+  <div class="container">
+    <form (ngSubmit)="updateUser()">
+      <div class="form-group">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" [(ngModel)]="user.name" name="name" placeholder="Name" />
+        </div>
+        
+        <div class="form-group">
+          <label>Color</label>
+          <input class="form-control" [(ngModel)]="user.color" placeholder="Color" />
+        </div>
+   
+        <div class="form-group">
+          <label>Year</label>
+          <input class="form-control" [(ngModel)]="user.year" placeholder="Year" />
+        </div>
+        
+        <div class="form-group">
+          <label>ID</label>
+          <input class="form-control" [(ngModel)]="user.id" placeholder="id" />
+        </div>
+
+        <button class="btn btn-primary" (click)="goBack()">go back</button>
+        <button class="btn btn-primary" (click)="updateUser()">Update</button>
+      </div>
+    </form>
+  </div>

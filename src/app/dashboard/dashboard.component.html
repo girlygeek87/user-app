@@ -1,0 +1,21 @@
+<div class="main">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/user']">Star Players</button>
+     
+    </mat-menu>
+    
+</div>
+
+<div class="widget-card-panel">
+    <div class="widget-col-1 widget-card">
+        <span>Unprocess purchase</span>
+    </div>
+    <div class="widget-col-2 widget-card">
+        <span>Happy Hour</span>
+    </div>
+    <div class="widget-col-3 widget-card widget-craze">
+        <span>Party Time</span>
+    </div>
+
+</div>
